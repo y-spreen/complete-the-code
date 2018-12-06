@@ -17,7 +17,7 @@ def url_view(request):
 def url_success_view(request, num, code):
     link = LinkModel.objects.get(number=num)
 
-    if code == 404:
+    if code == "404":
         link.delete()
     else:
         link.status = code
