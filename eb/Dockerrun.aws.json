@@ -1,0 +1,18 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [{
+        "name": "code",
+        "image": "yspreen/crackthecode",
+        "command": [
+            "sh",
+            "-c",
+            "python2.7 -m SimpleHTTPServer 80 & ./run.sh"
+        ],
+        "essential": true,
+        "memory": 500,
+        "portMappings": [{
+            "hostPort": 80,
+            "containerPort": 80
+        }]
+    }]
+}
