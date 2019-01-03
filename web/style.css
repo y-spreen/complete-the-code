@@ -1,0 +1,28 @@
+html,
+body,
+.body,
+img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 50%;
+    height: 50%;
+
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    width: 34.6%;
+    height: 34.5%;
+    top: 31.034%;
+    left: 34.483%;
+    image-rendering: pixelated
+}
